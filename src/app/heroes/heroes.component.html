@@ -1,3 +1,17 @@
-<h2><b>{{hero.name}}</b> details</h2>
-<p>id: <b>{{hero.id}}</b></p>
-<p>name: <b>{{hero.name}}</b></p>
+<h2><b>{{ hero.name }}</b> details</h2>
+<p>id: <b>{{ hero.id }}</b></p>
+<p>name: <b>{{ hero.name }}</b></p>
+<hr />
+<h2>Other Heroes</h2>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes" (click)="onClick(hero)" [class.selected]="hero === selectedHero">
+        <span class="badge">{{ hero.id }}</span> - {{ hero.name }}
+    </li>
+</ul>
+<input type="button" value="Clear" (click)="clear()">
+<div *ngIf="selectedHero">
+    <b> {{selectedHero.name}} </b> detail
+    <div><span>id: </span><b> {{selectedHero.id}} </b></div>
+    <div><span>name: </span><b>{{selectedHero.name}} </b></div>
+</div>
+<hr>
