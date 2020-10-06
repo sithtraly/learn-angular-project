@@ -10,6 +10,7 @@ import { PeopleComponent } from './people/people.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     PeopleComponent,
     NgSwitchComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
