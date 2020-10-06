@@ -1,0 +1,22 @@
+.not-found-big {
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.not-found-small {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    padding: 0;
+    margin: 5px;
+    width: 150px;
+    min-height: 75px;
+    height: auto;
+    --background-color: aqua;
+}
