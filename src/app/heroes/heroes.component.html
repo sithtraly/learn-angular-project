@@ -9,9 +9,5 @@
     </li>
 </ul>
 <input type="button" value="Clear" (click)="clear()">
-<div *ngIf="selectedHero">
-    <b> {{selectedHero.name}} </b> detail
-    <div><span>id: </span><b> {{selectedHero.id}} </b></div>
-    <div><span>name: </span><b>{{selectedHero.name}} </b></div>
-</div>
 <hr>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
-import {Heroes} from '../mock-heroes';
+import { Heroes } from '../mock-heroes';
 
 @Component({
   selector: 'app-heroes',
@@ -16,11 +16,11 @@ export class HeroesComponent implements OnInit {
   heroes = Heroes;
 
   selectedHero: Hero;
-  onClick(hero: Hero): void{ // onClick is a function name
+  onClick(hero: Hero): void { // onClick is a function name
     this.selectedHero = hero;
   }
 
-  clear():void{
+  clear(): void {
     this.selectedHero = null;
   }
 
